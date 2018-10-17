@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+
+    <title>Trailer Haven</title>
+</head>
+<body>
+    <h1>Welcome to Trailer Haven</h1>
+
+    <style type="text/css">
+        h1 {
+            font-family: 'Lobster Two', cursive;
+        }
+
+        p {
+            font-family: 'Crimson Text', serif;
+        }
+    </style>
+
+<p>Schedule a Tour with us Any Time</p>
+
+<img id="randomImage" alt="Red, Pink, & Blue!" width="700" height="500"/> <br />
+
+
+<script>
+
+    function getRandomImage() {
+        var images = ['random/blue.jpg', 'random/pink.jpg', 'random/brown.jpg', 'random/multi.jpg', 'random/yellow.jpg'];
+        var image = images[Math.floor(Math.random()*images.length)];
+
+        return image;
+    }
+
+    function displayRandomImage() {
+        var htmlImage = document.getElementById("randomImage");
+        htmlImage.src = getRandomImage();
+    }
+    displayRandomImage();
+
+</script>
+</body>
+</html>
+
