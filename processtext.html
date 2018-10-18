@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-
-    var customerName = prompt("Please enter your name", "");
-    if (customerName!= "null"){
-        document.getElementById("welcome").innerHTML = "Hello" + customerName + "! How are you today?";
-
-    }
-
-
-</script>
     <meta charset="UTF-8">
     <title>Type Your Text Here!</title>
 
 </head>
 
-
-
 <body>
 
-<div id ="welcome">My First JavaScript code</div>
+<p id="output"></p>
 
+<script>
+
+document.getElementById("output").innherHTML = "Hello, "+prompt("Enter Your Name:");
+
+</script>
 </body>
 </html>
