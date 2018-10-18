@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculate Here!</title>
 </head>
 <body>
+
+<script>
+
+    //Prompt
+
+    var userNumbers = [];
+    do {
+        var input = prompt("Enter Positive Numbers One at a Time. Enter a '-1' When you are finished.");
+        document.write(input);
+
+        userNumbers.push(input);
+
+    } while(input != -1);
+
+
+    for(var i=0; i<userNumbers.length; i++) {
+        console.log(userNumbers[i]);
+    }
+
+
+   
+
+
+
+
+
+
+
+
+</script>
+
+
+
 
 </body>
 </html>
